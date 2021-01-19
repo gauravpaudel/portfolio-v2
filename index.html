@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaurav Paudel</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.0/dist/alpine.min.js" defer></script>
+</head>
+<body class="bg-gray-200 text-gray-600">
+    <nav class="sticky top-0 bg-gray-300 pt-4 pb-2 shadow-sm">
+        <div x-data="{ isOpen: false }" class="md:flex md:items-center md:justify-between font-semibold">
+            <div class="flex items-center justify-between px-4">
+                <span></span>
+                <div class="flex md:hidden">
+                    <button @click="isOpen = !isOpen" type="button" class="text-gray-600 hover:text-gray-700 focus:outline-none focus:text-gray-700" aria-label="toggle menu"><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 7a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 13a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg></button>
+                </div>
+            </div>
+                <div :class="isOpen ? 'show' : 'hidden'" class="md:flex items-center">
+                    <div class="flex flex-col md:flex-row space-x-8">
+                        <a href="" class="my-1 text-red-700 hover:text-red-800 border-b-2 border-gray-300 hover:border-red-800 transition ease-out duration-500 focus:outline-none">Home</a>
+                        <a href="#about" class="my-1 hover:text-gray-800 border-b-2 border-gray-300 hover:border-gray-800 transition ease-out duration-500 focus:outline-none">About</a>
+                        <a href="#service" class="my-1 hover:text-gray-800 border-b-2 border-gray-300 hover:border-gray-800 transition ease-out duration-500 focus:outline-none">Service</a>
+                        <a href="#featured" class="my-1 hover:text-gray-800 border-b-2 border-gray-300 hover:border-gray-800 transition ease-out duration-500 focus:outline-none">Portfolio</a>
+                        <a href="" class="my-1 hover:text-gray-800 border-b-2 border-gray-300 hover:border-gray-800 transition ease-out duration-500 focus:outline-none">Resume</a>
+                        <a href="" class="my-1 hover:text-gray-800 border-b-2 border-gray-300 hover:border-gray-800 transition ease-out duration-500 focus:outline-none">Blog</a>
+                        <a href="#contact" class="my-1 hover:text-gray-800 border-b-2 border-gray-300 hover:border-gray-800 transition ease-out duration-500 focus:outline-none">Contact</a>
+                    </div>
+                </div>
+                <span></span>
+        </div>
+    </nav>
+
+    <div class="flex flex-col-reverse lg:flex-row  w-full h-full overflow-hidden">
+        <!-- left part-->
+        <div class="w-full lg:w-1/2">  
+            <div class="flex flex-col mt-28 lg:ml-56 justify-between tracking-wider items-center lg:items-baseline">
+                <h3 class="font-semibold flex"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-6 animate-pulse" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg> HELLO</h3>
+                <h2 class="mt-4 text-4xl font-extrabold text-gray-800">I'm <span class="text-red-600">Gaurav </span>Paudel</h2>
+                <p class="mt-4 text-sm font-semibold pl-2 lg:pl-0">This is Gaurav Paudel, Full-stack devceloper located in Nepal, looking for working around the globe</p>
+                <div class="mt-14"><button class="font-semibold text-center shadow-md rounded-md border-2 border-red-600 px-6 py-2 text-red-50 bg-red-600 hover:bg-red-50 hover:text-red-600 transition ease-out duration-500 focus:outline-none"><a href="#">Download CV</a></button></div>    
+            </div>
+        </div>
+
+        <!-- right part-->
+        <div class="w-full lg:w-1/2 flex items-center">
+            <div class="">
+                <img src="img/PicsArt_09-26-10.52.02.png" class="h-3/4 w-5/6"> 
+            </div>
+            <div class="lg:pt-52">
+                <h3 class="inline-flex justify-between transform rotate-90 text-sm">SCROLL DOWN <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg></h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABout me -->
+
+    <div class="overflow-hidden mt-10 bg-gray-50 pt-8 lg:pt-32 w-full h-full pb-20" id="about">
+      
+        <div class="flex">
+              <!-- image-->
+            <div class="hidden lg:block lg:w-1/2 lg:pl-60">
+                <img src="img/PicsArt_09-26-10.52.02.png" class="w-80 h-80">
+            </div>
+            <!-- about seciton-->
+            <div class="w-full lg:w-1/2 px-4 lg:pr-52  flex flex-col">
+                <h2 class="flex items-center font-extrabold text-3xl tracking-wide"><svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-6 animate-pulse" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg> About Me</h2>
+                <p class="mt-8 font-semibold">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi unde ipsum minima modi nobis natus blanditiis neque eveniet consequuntur explicabo? Ratione reiciendis aspernatur tenetur expedita fugit maxime, iste error cumque.</p>
+                <p class="mt-6 font-semibold"> Lorem ipsum doloLorem ipsum doloLorem ipsum doloLorem ipsum doloLorem ipsum doloLorem ipsum dolo</p>
+                <div class="mt-14 text-center lg:text-left">
+                    <button class="text-center text-sm font-semibold border-2 px-6 py-2 shadow-md rounded-md border-red-600 text-red-50 bg-red-600 hover:bg-red-50 hover:text-red-600 transition ease-out duration-500"><a href="#">HIRE ME</a></button>
+                </div>
+            </div>
+        </div>
+        <!-- skills-->
+        <div class="flex flex-col">
+            <h2 class="text-center mt-20 text-2xl font-extrabold">My Skills</h2>
+            <div class="flex flex-col lg:flex-row mt-4">
+                <div class="w-full lg:w-1/4 lg:ml-60 px-10 lg:px-0">
+                    <h2 class="text-center font-semibold">Django</h2>
+                    <div class="relative pt-1">
+                        <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-gray-200">
+                        <div style="width:80%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-gray-500"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/4 lg:ml-60 px-10 lg:px-0">
+                    <h2 class="text-center font-semibold">Vuejs</h2>
+                    <div class="relative pt-1">
+                        <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-gray-200">
+                        <div style="width:75%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-gray-500"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col lg:flex-row mt-4">
+                <div class="w-full lg:w-1/4 lg:ml-60 px-10 lg:px-0">
+                    <h2 class="text-center font-semibold">Tailwindcss</h2>
+                    <div class="relative pt-1">
+                        <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-gray-200">
+                        <div style="width:90%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-gray-500"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/4 lg:ml-60 px-10 lg:px-0">
+                    <h2 class="text-center font-semibold">Alphinejs</h2>
+                    <div class="relative pt-1">
+                        <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-gray-200">
+                        <div style="width:80%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-gray-500"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Expetise Area-->
+    <div class="lg:py-20 py-8 w-full h-full" id="service">
+        <!-- summary-->
+        <div class="text-center">
+            <h2 class="text-2xl font-extrabold tracking-wide">Expertise Area</h2>
+            <p class="lg:ml-80 lg:mr-80 mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure fugit ab et dolorem praesentium recusandae totam maiores accusamus incidunt beatae.</p>
+        </div>
+        <!-- Cards expalining skills-->
+        <div class="lg:pt-14 flex flex-col lg:flex-row items-center">
+            <div class="lg:w-1/5"></div>
+            <div class="cursor-default border border-gray-400 lg:w-1/4 py-6 px-4 mt-4 text-center lg:mr-6 rounded-lg transform hover:-translate-y-3 transition ease-out duration-500 hover:border-gray-600 hover:shadow-2xl">
+                <h2 class="font-semibold text-xl text-red-600">Web development</h2>
+                <p class="mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque minima dolorem consequatur vero officia laborum tenetur, hic distinctio deleniti quam.</p>
+            </div>
+            <div class="cursor-default border border-gray-400 lg:w-1/4 py-6 px-4 mt-4 text-center lg:mr-6 rounded-lg transform hover:-translate-y-3 transition ease-out duration-500 hover:border-gray-600 hover:shadow-2xl">
+                <h2 class="font-semibold text-xl text-red-600">Django</h2>
+                <p class="mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque minima dolorem consequatur vero officia laborum tenetur, hic distinctio deleniti quam.</p>
+            </div>
+            <div class="cursor-default border border-gray-400 lg:w-1/4 py-6 px-4 mt-4 text-center rounded-lg transform hover:-translate-y-3 transition ease-out duration-500 hover:border-gray-600 hover:shadow-2xl">
+                <h2 class="font-semibold text-xl text-red-600">Django</h2>
+                <p class="mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque minima dolorem consequatur vero officia laborum tenetur, hic distinctio deleniti quam.</p>
+            </div>
+            <div class="lg:w-1/5"></div>
+
+        </div>
+    </div>
+
+    <!-- Featured works-->
+    <div class="bg-gray-50 pt-10" id="featured">
+        <div class="text-center">
+            <h2 class="text-2xl font-extrabold tracking-wide">Featured Works</h2>
+            <p class="lg:ml-80 lg:mr-80 mt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga alias, eaque ipsum dolorum molestias ex quaerat velit recusandae ducimus modi.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-2 mt-8 lg:px-52">
+            <div class="row-span-2 overflow-hidden">
+                <h1 class="text-2xl text-red-600">Gym</h1>
+                <img src="img/gym.webp" class="w-full h-full">
+            </div>
+            <div class="">
+                <h1 class="text-2xl text-red-600">Gym</h1>
+                <img src="img/mac.webp" class="h-full w-full">
+            </div>
+            <div class="row-span-2"><img src="img/paper.webp" class="w-full h-full"></div>
+            <div class="row-span-2"><img src="img/paper.webp"></div>
+            <div class="row-span-2"><img src="img/paper.webp"></div>
+            <div class=""><img src="img/mac.webp"></div>
+        </div>
+    </div>
+
+    <!-- contact form-->
+    <div class="flex flex-col lg:flex-row items-center" id="contact">
+        <div class="w-full lg:w-1/2 pt-20 text-xl">
+            <p class="lg:ml-44 mx-4 lg:mr-20">Lets make something new, different and more meaningful or make thing more visual or Conceptual ? Just Say HELLO !</p>
+        </div>
+        <div class="w-full lg:w-1/2 py-4 lg:mr-52">
+            <form class="py-4">
+                <div class="shadow-2xl rounded-xl p-8">
+                    <input type="text" class="block w-5/6 lg:w-full focus:ring-0 border-b border-gray-300 focus:border-gray-400" placeholder="Your Name">
+                    <input type="text" class="block mt-4 w-5/6 lg:w-full focus:ring-0 border-b border-gray-300 focus:border-gray-400" placeholder="Mail Address">
+                    <input type="text" class="block mt-4 w-5/6 lg:w-full focus:ring-0 border-b border-gray-300 focus:border-gray-400" placeholder="Your Budget(Optional)">
+                    <input type="text" class="block mt-4 w-5/6 lg:w-full focus:ring-0 border-b border-gray-300 focus:border-gray-400" placeholder="Project Description">
+                    <button class="font-semibold text-center border-2 border-gray-800 bg-gray-800 px-6 py-2 mt-4 text-gray-50 hover:bg-gray-50 hover:text-gray-800 transition ease-out duration-500 tracking-wide">HIRE ME</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="p-8 text-center bg-gray-50 font-semibold ">
+            <h3>Created by Gaurav Paudel</h3>
+        </div>
+    </footer>
+
+
+</body>
+</html>
